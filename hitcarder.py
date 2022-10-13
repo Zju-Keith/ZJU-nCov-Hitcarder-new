@@ -129,7 +129,6 @@ class HitCarder(object):
         ocr = ddddocr.DdddOcr()
         resp = self.sess.get(self.captcha_url)
         # form change
-        print(new_info)
         new_info['szgjcs'] = ""
         new_info['zgfx14rfhsj'] = ""
         new_info['geo_api_info'] = old_info['geo_api_info'] # 定位
@@ -137,6 +136,7 @@ class HitCarder(object):
         new_info['area'] = old_info['area']
         new_info['city'] = old_info['city']
         new_info['ismoved'] = 0
+        new_info['sfzgn'] = old_info['sfzgn']
         new_info['sfzx'] = old_info['sfzx'] # 在校
         new_info['sfymqjczrj'] = old_info['sfymqjczrj'] # 入境
         new_info['sfqrxxss'] = 1 # 属实
