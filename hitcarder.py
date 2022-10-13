@@ -130,7 +130,7 @@ class HitCarder(object):
         resp = self.sess.get(self.captcha_url)
         # form change
         new_info['szgjcs'] = ""
-        new_info['zgfx14rfhsj'] = ""
+        new_info['zgfx14rfhsj'] = old_info['zgfx14rfhsj']
         new_info['geo_api_info'] = old_info['geo_api_info'] # 定位
         new_info['address'] = old_info['address']
         new_info['area'] = old_info['area']
